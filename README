@@ -1,0 +1,12 @@
+# iwantmyname-ddns
+
+Docker image for Dynamic DNS for you iwantmyname domains: https://iwantmyname.com/blog/ddns-dynamic-dns-service-on-your-own-domain.
+
+## API
+
+Set the following environment variables:
+
+- USERNAME: iwantmyname username (required)
+- PASSWORD: iwantmyname password (required)
+- HOSTNAME: dns hostname to set ip on (required)
+- INTERVAL: interval to update hostname, if <= 0 then update hostname once, if > 0 then update hostname every INTERVAL seconds (optional)
